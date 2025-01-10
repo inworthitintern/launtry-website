@@ -9501,11 +9501,16 @@ h6,
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  font-size: 24px;
+  /* font-size: 24px; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   text-align: center;
   transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon i {
+  display: inline-block; /* Ensures the icon behaves as an inline block */
+  line-height: 1; /* Resets any line-height issues */
 }
 .whatsapp-icon:hover i {
   color: #fff;
