@@ -5853,6 +5853,7 @@ a.close.disabled {
 }
 
 .carousel-item {
+  height: 100vh;
   position: relative;
   display: none;
   float: left;
@@ -5860,6 +5861,12 @@ a.close.disabled {
   margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
