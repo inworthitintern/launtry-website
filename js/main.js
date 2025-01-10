@@ -63,6 +63,30 @@
         }
     });
 
+    // Client carousel
+    $(".client-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 2000,
+        smartSpeed: 1000,
+        dots: true,
+        loop: true,
+        margin: 30,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            }
+        }
+    });
+
 
     // Related Post carousel
     $(".related-carousel").owlCarousel({
@@ -87,7 +111,8 @@
     // Category carousel
     $(".category-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        autoplayTimeout: 2000,
+        // smartSpeed: 1000,
         dots: true,
         loop: true,
         margin: 30,

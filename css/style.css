@@ -2931,7 +2931,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #7d716c;
   pointer-events: none;
 }
 
@@ -3957,7 +3957,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #7d6c76;
   background-color: transparent;
   border-color: transparent;
 }
@@ -9487,6 +9487,36 @@ h6,
   animation: action 1s infinite alternate;
 }
 
+/* Whatsapp */
+
+.whatsapp-icon {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.whatsapp-icon:hover i {
+  color: #fff;
+}
+
+.whatsapp-icon:hover {
+  background-color: #1ebe5c;
+}
+
+
+
 @keyframes action {
   0% {
     transform: translateY(0);
@@ -9563,6 +9593,44 @@ h6,
 }
 
 .testimonial-carousel .owl-dot.active {
+  background: #46C6CE;
+}
+
+
+.client-carousel .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.client-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.client-carousel .owl-dot.active {
+  background: #46C6CE;
+}
+
+
+.category-carousel .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.category-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.category-carousel .owl-dot.active {
   background: #46C6CE;
 }
 
