@@ -9494,6 +9494,111 @@ h6,
   animation: action 1s infinite alternate;
 }
 
+/* Service Section */
+.text-with-line {
+  position: relative;
+  padding-left: 40px;
+}
+
+.text-with-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  width: 30px; 
+  height: 2px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
+/* Contact Section */
+.contact-page {
+  padding: 30px;
+  background-color: #111;
+  color: #fff;
+}
+
+.contact-section {
+  margin-bottom: 30px;
+}
+
+.contact-section .row {
+  justify-content: flex-start; 
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.contact-section .contact-details {
+  justify-content: flex-start; 
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.contact-section h4 {
+  font-size: 24px;
+  color: #46C6CE;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-section p i {
+  color: #46C6CE;
+  margin-right: 10px;
+}
+
+iframe {
+  border: none;
+  border-radius: 5px;
+}
+
+
+.location-container {
+  display: flex;
+  align-items: start;
+}
+
+.location-container i {
+  margin-right: 10px;
+}
+
+.address-text {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.map-container {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .contact-row {
+      flex-direction: column;
+  }
+
+  .contact-details {
+      margin-right: 0;
+  }
+}
+
 /* Whatsapp */
 
 .whatsapp-icon {
